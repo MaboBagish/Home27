@@ -1,25 +1,25 @@
-
+import java.util.List;
 
 public class Movie {
     private String name;
     private int year;
     private String description;
     private Director director;
-    private Cast cast;
+    private List<Cast> cast;
 
     public Movie(Director director) {
         this.director = director;
     }
 
-    public Movie(Cast cast) {
-        this.cast = cast;
-    }
+//    public Movie(Cast cast) {
+//        this.cast = cast;
+//    }
 
-    public Cast getCast() {
+    public List<Cast> getCast() {
         return cast;
     }
 
-    public void setCast(Cast cast) {
+    public void setCast(List<Cast> cast) {
         this.cast = cast;
     }
 
